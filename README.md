@@ -11,12 +11,13 @@ Snow removal aims to locate snow areas and recover clean images without repairin
 
 First, a Laplace-VQVAE is introduced to generate a coarse mask as prior knowledge of snow. Instead of relying on dataset-provided masks, this approach reduces both the information entropy of snow and the computational cost of recovery. Second, a Mask Query Transformer (MQFormer) is designed to remove snow using the coarse mask, employing two parallel encoders and a hybrid decoder to learn extensive snow features under lightweight constraints. Third, a Duplicated Mask Query Attention (DMQA) mechanism is developed to convert the coarse mask into a specific number of queries, constraining the attention areas of MQFormer while reducing parameters.
 
-Experimental results on popular datasets demonstrate the efficiency of the proposed model, achieving state-of-the-art snow removal quality with significantly reduced parameters and the lowest running time.
-[[Paper Download]]([LMQFormer: A Laplace-Prior-Guided Mask Query Transformer for Lightweight Snow Removal | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10092769))
-
 In snowy environments, surveillance through drones, helicopters, and stationary cameras faces a critical challenge—snow accumulation on camera lenses, which severely obstructs visibility. To address this issue, the LMQFormer model is leveraged for real-time snow removal, ensuring clearer images for improved surveillance and monitoring.
 
 To deploy this solution effectively on edge devices such as drones, the model is converted to ONNX format and optimized for efficient inference. Qualcomm AI Hub is used for compiling and profiling the model, ensuring it runs seamlessly on resource-constrained IoT devices.
+
+
+Experimental results on popular datasets demonstrate the efficiency of the proposed model, achieving state-of-the-art snow removal quality with significantly reduced parameters and the lowest running time.
+[[Paper Download]]([LMQFormer: A Laplace-Prior-Guided Mask Query Transformer for Lightweight Snow Removal | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10092769))
 
 # Network Architecture
 
@@ -43,6 +44,10 @@ It can be downloaded from：
 
 Link:  https://drive.google.com/drive/folders/1WiFnUh6WRIiFr7sb-h3lAcoqzi6ZyTvz?usp=sharing 
 
+# Qualcomm Ai hub
+The model has been compiled and profiled in Qualcomm AI Hub to optimize its performance on specific chipsets such as QC8550. 
+This ensures efficient execution by leveraging hardware acceleration and optimizing resource utilization. 
+A link to Qualcomm AI Hub is also provided: https://aihub.qualcomm.com/
 
 # Citations
 
