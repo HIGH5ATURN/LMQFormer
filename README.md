@@ -9,7 +9,7 @@ Qualitative results on synthetic datasets. From top to bottom rows: Snow100K, SR
 
 Snow removal aims to locate snow areas and recover clean images without repairing traces. Unlike the regularity and semitransparency of rain, snow with various patterns and degradations seriously occludes the background. As a result, state-of-the-art snow removal methods usually retain a large parameter size. In this work, a lightweight yet highly efficient snow removal network called Laplace Mask Query Transformer (LMQFormer) is proposed by Lin, Junhong; Jiang, Nanfeng; Zhang, Zhentao; Chen, Weiling; and Zhao, Tiesong.
 
-In snowy environments, surveillance through drones, helicopters, and stationary cameras faces a critical challenge—snow accumulation on camera lenses, which severely obstructs visibility. To address this issue, the LMQFormer model is leveraged for real-time snow removal, ensuring clearer images for improved surveillance and monitoring.
+In snowy environments, surveillance through drones, helicopters, and stationary cameras faces a critical challenge—snow accumulation on camera lenses and snowy images, which severely obstructs visibility. To address this issue, the LMQFormer model is leveraged for real-time snow removal, ensuring clearer images for improved surveillance and monitoring.
 
 To deploy this solution effectively on edge devices such as drones, the model is converted to ONNX format and optimized for efficient inference. Qualcomm AI Hub is used for compiling and profiling the model, ensuring it runs seamlessly on resource-constrained IoT devices.
 
