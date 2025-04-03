@@ -7,15 +7,11 @@ Qualitative results on synthetic datasets. From top to bottom rows: Snow100K, SR
 
 # Abstract:
 
-Snow removal aims to locate snow areas and recover clean images without repairing traces. Unlike the regularity and semitransparency of rain, snow with various patterns and degradations seriously occludes the background. As a result, state-of-the-art snow removal methods usually retain a large parameter size. In this work, a lightweight yet highly efficient snow removal network called Laplace Mask Query Transformer (LMQFormer) is proposed by Lin, Junhong; Jiang, Nanfeng; Zhang, Zhentao; Chen, Weiling; and Zhao, Tiesong.
+Snow removal aims to locate snow areas and recover clean images without repairing traces. Unlike the regularity and semitransparency of rain, snow with various patterns and degradations seriously occludes the background. As a result, state-of-the-art snow removal methods usually retain a large parameter size. A lightweight yet highly efficient snow removal network called Laplace Mask Query Transformer (LMQFormer) is proposed by Lin, Junhong; Jiang, Nanfeng; Zhang, Zhentao; Chen, Weiling; and Zhao, Tiesong. [[Paper Download]]([LMQFormer: A Laplace-Prior-Guided Mask Query Transformer for Lightweight Snow Removal | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10092769))
 
-In snowy environments, surveillance through drones, helicopters, and stationary cameras faces a critical challenge—snow accumulation on camera lenses and snowy images, which severely obstructs visibility. To address this issue, the LMQFormer model is leveraged for real-time snow removal, ensuring clearer images for improved surveillance and monitoring.
-
-To deploy this solution effectively on edge devices such as drones, the model is converted to ONNX format and optimized for efficient inference. Qualcomm AI Hub is used for compiling and profiling the model, ensuring it runs seamlessly on resource-constrained IoT devices.
+To validate the architectures capabilities on embedded systems, we deployed LMQFormer on Qualcomm AI platforms, fine-tuning it to achieve real-time performance on our target chip. Additionally, we conducted a comparative analysis of its performance on the CPU against the optimized version, evaluating results across various image sizes. Our findings underscore LMQFormer’s transformative potential in enhancing snow removal for IoT and embedded applications, ultimately enabling reliable computer vision even under adverse weather conditions.
 
 
-Experimental results on popular datasets demonstrate the efficiency of the model, achieving state-of-the-art snow removal quality with significantly reduced parameters and the lowest running time.
-[[Paper Download]]([LMQFormer: A Laplace-Prior-Guided Mask Query Transformer for Lightweight Snow Removal | IEEE Journals & Magazine | IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10092769))
 
 # Network Architecture
 
